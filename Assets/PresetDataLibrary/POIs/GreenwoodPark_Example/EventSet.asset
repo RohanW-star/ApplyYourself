@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942cf0fce2e0eae479b3832089ba2e45, type: 3}
+  m_Name: EventSet
+  m_EditorClassIdentifier: Assembly-CSharp::EventSet
+  _prechosenDescription: 
+  _chosenDescription: 
+  _optionSets:
+  - {fileID: 11400000, guid: b5b4f2070c271474ab49fb783d9c3815, type: 2}
+  - {fileID: 11400000, guid: f8db694e5a712bf40bfcb390d368b16b, type: 2}

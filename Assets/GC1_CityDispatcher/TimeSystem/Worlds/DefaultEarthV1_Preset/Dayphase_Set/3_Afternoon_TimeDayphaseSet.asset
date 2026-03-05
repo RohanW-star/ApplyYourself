@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb422507ecb889f4c994ab7d112174bd, type: 3}
+  m_Name: 3_Afternoon_TimeDayphaseSet
+  m_EditorClassIdentifier: Assembly-CSharp::TimeDayphaseSet
+  dayphaseName: afternoon
+  durationInHours: 6
+  possibleDailyMoods:
+  - {fileID: 11400000, guid: 20d2006660bd4a244af1473d6642af19, type: 2}
+  - {fileID: 11400000, guid: 2c475f8ab4424b047b277135d4410303, type: 2}
+  - {fileID: 11400000, guid: 2794cadcdd0fc414099668a48c2731fc, type: 2}
+  - {fileID: 11400000, guid: 2a8e5e1895e971841b4fddb0eb395312, type: 2}
+  - {fileID: 11400000, guid: 1b071ffe4ee82ce41a9c802c4fe8fd0c, type: 2}
+  - {fileID: 11400000, guid: bdc6063fe66cd154ab46447ab9c566f6, type: 2}
+  - {fileID: 11400000, guid: 459bde1bce26bbf448e5e2f21823aecd, type: 2}
+  - {fileID: 11400000, guid: 88328adcbede6a54d9cc48d6c731e3c0, type: 2}
+  - {fileID: 11400000, guid: 968204e9e9e52174db7c95213897ecc1, type: 2}
+  - {fileID: 11400000, guid: 87e02e5ff03d53643b2e2196d6d12018, type: 2}
+  - {fileID: 11400000, guid: 84fc65a68fb0b4c478a9ab4af08a74fc, type: 2}
+  - {fileID: 11400000, guid: 7bd4428d340a2df49a2801486be54c38, type: 2}
+  - {fileID: 11400000, guid: 053c1b5763b3711468e7810e57267faf, type: 2}
+  - {fileID: 11400000, guid: 904b4e6ed0ddaf14eaccb672dab51bf1, type: 2}

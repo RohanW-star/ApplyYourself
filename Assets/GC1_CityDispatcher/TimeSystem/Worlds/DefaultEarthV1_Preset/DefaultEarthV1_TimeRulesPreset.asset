@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1528a1a4bf704c148b1ac617188534b5, type: 3}
+  m_Name: DefaultEarthV1_TimeRulesPreset
+  m_EditorClassIdentifier: Assembly-CSharp::TimeRulesPreset
+  secondsPerMinute: 60
+  minutesPerQuarter: 15
+  quartersPerHour: 4
+  minutesPerHour: 60
+  daysPerCommonYear: 365
+  weeksPerCommonYear: 52
+  remainingDaysAfterWeeksPerCommonYear: 1
+  daysPerLeapYear: 366
+  weeksPerLeapYear: 52
+  remainingDaysAfterWeeksPerLeapYear: 2
+  LeapYearEveryDivisible: 4
+  skipLeapYearsDivisibleBy: 100
+  unskipLeapYearsDivisibleBy: 400
+  hoursPerDay:
+  - {fileID: 11400000, guid: e73accf4c2fe1dc40a3b4c811aebbc3e, type: 2}
+  - {fileID: 11400000, guid: c438d3a0eacfe414f9fb564c2beb0936, type: 2}
+  - {fileID: 11400000, guid: f1a3bec7cd83fb844a8b655eab0630e1, type: 2}
+  - {fileID: 11400000, guid: 826fbd6f89374b244a106e040b3a38ce, type: 2}
+  - {fileID: 11400000, guid: 22d2e0c2e79711f4383fca366ea31208, type: 2}
+  - {fileID: 11400000, guid: 202839ea5abea304f9be412054d4fa5c, type: 2}
+  - {fileID: 11400000, guid: e2b6edd61f470c249a6f26236ae97c15, type: 2}
+  - {fileID: 11400000, guid: 82c3fa7839d48f94899f29940f8efe1f, type: 2}
+  - {fileID: 11400000, guid: 067ad82df25e8b24fb815e747725561a, type: 2}
+  - {fileID: 11400000, guid: 9846522ce72d8554a8b605836f5bcec7, type: 2}
+  - {fileID: 11400000, guid: 3a73593d81857f647957d6f5224d48e6, type: 2}
+  - {fileID: 11400000, guid: cf0d601f31edd464c8d0bb60a841e415, type: 2}
+  - {fileID: 11400000, guid: 91218628067aaa34dbecda3d89368857, type: 2}
+  - {fileID: 11400000, guid: 65fc9350321c09e48b9d16c3b95cb0a8, type: 2}
+  - {fileID: 11400000, guid: 15d49618fb87971419f927e9a95c2fad, type: 2}
+  - {fileID: 11400000, guid: 7cac6dfb3dc81854fae9fd77af9e4a2f, type: 2}
+  - {fileID: 11400000, guid: c8e52453eefa7fb4d9aca999004578dc, type: 2}
+  - {fileID: 11400000, guid: c009580910b47394ebdd36cdf0c11d5c, type: 2}
+  - {fileID: 11400000, guid: bd0f77f0f1a3bde48a4a1424ee92a91b, type: 2}
+  - {fileID: 11400000, guid: 49ff78b67cb1fa740a1199ce3eb73890, type: 2}
+  - {fileID: 11400000, guid: 1eeaecba3fb4f114193d563f8c406ae2, type: 2}
+  - {fileID: 11400000, guid: 18c2a947b878e65429497c44c299110f, type: 2}
+  - {fileID: 11400000, guid: 83145aca775ce9a4e993d7cb6394a665, type: 2}
+  - {fileID: 11400000, guid: 689002c187b1ca2499ad75a105137306, type: 2}
+  daysPerWeek:
+  - {fileID: 11400000, guid: 24d2660628b04b643920c6ee3c0c2517, type: 2}
+  - {fileID: 11400000, guid: 7823816c78ae4574e84cd8cf73d7fbdf, type: 2}
+  - {fileID: 11400000, guid: 7f8d8cb2b13909b4f9ee263da6ff51fb, type: 2}
+  - {fileID: 11400000, guid: d91769d99ba9f6e42a374e21e8ecb4fd, type: 2}
+  - {fileID: 11400000, guid: f2988dc9a82489f4ebcd7d572685e25f, type: 2}
+  - {fileID: 11400000, guid: 58da3060875c54f47ae763990acd7858, type: 2}
+  - {fileID: 11400000, guid: cd4fc63f4d9de1843b011a3d13655743, type: 2}
+  monthsPerYear:
+  - {fileID: 11400000, guid: 25cbbbddcbfa9454689d3d79875e7086, type: 2}
+  - {fileID: 11400000, guid: 3f727bd87a28f2a4d84464816deb4079, type: 2}
+  - {fileID: 11400000, guid: e098de0bc39881b47b3db05d5a8dada7, type: 2}
+  - {fileID: 11400000, guid: a6e1fff8b2f17864fa2f4d417cf593b1, type: 2}
+  - {fileID: 11400000, guid: c2f978c627125de47b136a47978f8f0f, type: 2}
+  - {fileID: 11400000, guid: abda3e7ddbd68d245b0e9a628e6432f2, type: 2}
+  - {fileID: 11400000, guid: c6d412fda9d0d7740ab702918510c272, type: 2}
+  - {fileID: 11400000, guid: 546d5a4382b589e4e8342170f301e928, type: 2}
+  - {fileID: 11400000, guid: 6297501a0c0523149a942f5e72c22e33, type: 2}
+  - {fileID: 11400000, guid: c4ca5a26cb4b069439d5a4be8c7e00fc, type: 2}
+  - {fileID: 11400000, guid: 6b300b2c76cf38344817ac3f1c8a9257, type: 2}
+  - {fileID: 11400000, guid: cd8fdcd089c89a84aa6e2fe7de9a3293, type: 2}
