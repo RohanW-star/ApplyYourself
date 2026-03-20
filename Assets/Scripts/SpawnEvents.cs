@@ -22,8 +22,16 @@ public class SpawnEvents : MonoBehaviour
 
     void Update()
     {
-        timer -= Time.deltaTime;
-        if (timer < 0)
+        if (EventManager.Instance.CanSpawn())
+        {
+            timer -= Time.deltaTime;
+        }
+        else
+        {
+            timer -= Time.deltaTime * 0.1f;
+        }
+
+        if (timer <= 0)
         {
             SpawnEvent();
         }
@@ -33,12 +41,15 @@ public class SpawnEvents : MonoBehaviour
     {
         if (events.Count == 0) return;
 
+        if (!EventManager.Instance.CanSpawn()) return;
+
         int randomIndex = Random.Range(0, events.Count);
         GameObject chosenEvent = events[randomIndex];
 
         chosenEvent.SetActive(true);
+        EventManager.Instance.EventActivated();
         events.RemoveAt(randomIndex);
 
-        timer = Random.Range(7f, 15f);
+        timer = Random.Range(6f, 11f);
     }
 }
