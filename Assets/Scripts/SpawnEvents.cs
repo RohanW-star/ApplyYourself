@@ -6,7 +6,7 @@ public class SpawnEvents : MonoBehaviour
 {
     [SerializeField] private float timer;
 
-    private List<GameObject> events;
+    [SerializeField] private List<GameObject> events;
 
     void Start()
     {

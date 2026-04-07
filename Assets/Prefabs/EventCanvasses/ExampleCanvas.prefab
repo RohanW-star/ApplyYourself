@@ -414,6 +414,7 @@ MonoBehaviour:
   changeB: 2
   changeC: -1
   changedBuilding: {fileID: 0}
+  oldBuilding: {fileID: 0}
   extraChanges: []
 --- !u!1 &2067892009547601858
 GameObject:
@@ -565,6 +566,7 @@ MonoBehaviour:
   changeB: -1
   changeC: 6
   changedBuilding: {fileID: 0}
+  oldBuilding: {fileID: 0}
   extraChanges: []
 --- !u!1 &2094016439052038943
 GameObject:

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class ClickPhone : MonoBehaviour
 {
     [SerializeField] private Transform canvasParent;
+    public GameObject phone;
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class ClickPhone : MonoBehaviour
             child.SetParent(canvasParent);
 
         }
-
+        phone.SetActive(false);
         gameObject.SetActive(false);
     }
 }
