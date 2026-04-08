@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CanClick
   - Phone
+  - Audio
   layers:
   - Default
   - TransparentFX
