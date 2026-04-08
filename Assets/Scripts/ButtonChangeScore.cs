@@ -52,6 +52,7 @@ public class ButtonChangeScore : MonoBehaviour
     {
         ClickOnBuildings = Object.FindFirstObjectByType<ClickOnBuildings>();
         ClickOnBuildings.enabled = true;
+        ScoresManager.Instance.canEnd = true;
         Destroy(transform.root.gameObject);
     }
 }

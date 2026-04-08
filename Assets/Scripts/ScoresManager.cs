@@ -28,6 +28,12 @@ public class ScoresManager : MonoBehaviour
     private int currentItemIndex = 0;
     private int currentItemIndex2 = 0;
 
+    bool star1Done, star2Done, star3Done;
+    bool item1Done, item2Done, item3Done;
+    bool item21Done, item22Done, item23Done;
+
+    public bool canEnd;
+
     void Awake()
     {
         Instance = this;
@@ -75,45 +81,76 @@ public class ScoresManager : MonoBehaviour
 
     private void Update()
     {
-        if (currentStarIndex == 1)
+        if (canEnd)
+        {
+            if (currentStarIndex >= 4)
+            {
+                SceneManager.LoadScene("BioEnding");
+            }
+            if (currentItemIndex >= 4)
+            {
+                SceneManager.LoadScene("MensEnding");
+            }
+            if (currentItemIndex2 >= 4)
+            {
+                SceneManager.LoadScene("CirkelEnding");
+            }
+        }
+
+        if (currentStarIndex == 1 && !star1Done)
         {
             Instantiate(bio1);
             Destroy(dirty2);
+            star1Done = true;
         }
-        if (currentStarIndex == 2)
+
+        if (currentStarIndex == 2 && !star2Done)
         {
             Instantiate(bio2);
             Destroy(dirty);
+            star2Done = true;
         }
-        if (currentStarIndex == 3)
+
+        if (currentStarIndex == 3 && !star3Done)
         {
             Instantiate(bio3);
+            star3Done = true;
         }
 
-        if (currentItemIndex == 1)
+        if (currentItemIndex == 1 && !item1Done)
         {
             Instantiate(peep1);
-        }
-        if (currentItemIndex == 2)
-        {
-            Instantiate(peep2);
-        }
-        if (currentItemIndex == 3)
-        {
-            Instantiate(peep3);
+            item1Done = true;
         }
 
-        if (currentItemIndex2 == 1)
+        if (currentItemIndex == 2 && !item2Done)
+        {
+            Instantiate(peep2);
+            item2Done = true;
+        }
+
+        if (currentItemIndex == 3 && !item3Done)
+        {
+            Instantiate(peep3);
+            item3Done = true;
+        }
+
+        if (currentItemIndex2 == 1 && !item21Done)
         {
             Instantiate(ener1);
+            item21Done = true;
         }
-        if (currentItemIndex2 == 2)
+
+        if (currentItemIndex2 == 2 && !item22Done)
         {
             Instantiate(ener2);
+            item22Done = true;
         }
-        if (currentItemIndex2 == 3)
+
+        if (currentItemIndex2 == 3 && !item23Done)
         {
             Instantiate(ener3);
+            item23Done = true;
         }
     }
 }
