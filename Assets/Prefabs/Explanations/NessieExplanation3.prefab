@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3068111299755461863}
   - component: {fileID: 7732968018790731145}
+  - component: {fileID: 113261245033289453}
   - component: {fileID: 2419547631191505761}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -46,6 +47,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913047837583789756}
   m_CullTransparentMesh: 1
+--- !u!114 &113261245033289453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913047837583789756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed69b4369b61f54a8fa52440f19a322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialoogSysteem
+  dialogueText: {fileID: 2419547631191505761}
+  typingSpeed: 0.01
+  sentences:
+  - Ik zal zorgen dat opruim machines het water op worden gestuurd die snel en efficient
+    al het afval op kunnen ruimen. Hierdoor zal binnen een korte tijd alles weer
+    schoon zijn.
 --- !u!114 &2419547631191505761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,9 +85,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ik zal zorgen dat opruim machines het water op worden gestuurd die snel
-    en efficient al het afval op kunnen ruimen. Hierdoor zal binnen een korte tijd
-    alles weer schoon zijn.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -289,6 +306,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonChangeScore
   explanation: {fileID: 3719944958709417037}
+  bioIncrease: 0
+  peopleIncrease: 0
+  energieIncrease: 0
   oldName: []
   extraChanges: []
 --- !u!1 &2134388772961987479
