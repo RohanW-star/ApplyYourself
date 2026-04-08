@@ -521,14 +521,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0846a55f724bd6e4d88f5e5fb7ebf9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonChangeScore
-  changeA: 3
-  changeB: 0
-  changeC: 3
   explanation: {fileID: 3719944958709417037, guid: d8a89be1e31912d4a8a5c60c0a650428, type: 3}
-  oldName: ungly flat
+  bioIncrease: 1
+  peopleIncrease: 0
+  energieIncrease: 1
+  oldName:
+  - ungly flat
   extraChanges:
   - {fileID: 4514301717537669623, guid: d30d003dfca50e84abad77d6948ecbe2, type: 3}
   - {fileID: 8436362959313433930, guid: f67d7d9bd32bb7c41ba9cd79c0f53318, type: 3}
+  - {fileID: 1569979086193477412, guid: f79f51cb379f2b741aab012e8d72de33, type: 3}
 --- !u!1 &1772152874742263047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,10 +1142,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6910004457360669610}
   - {fileID: 1690650389680886836}
   - {fileID: 3146888518969309321}
   - {fileID: 7384001417029717713}
+  - {fileID: 6910004457360669610}
   m_Father: {fileID: 2414018614043874241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1335,14 +1337,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0846a55f724bd6e4d88f5e5fb7ebf9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonChangeScore
-  changeA: -1
-  changeB: 0
-  changeC: 6
   explanation: {fileID: 3719944958709417037, guid: c3abec4d40ce30a42b7726c318894ac0, type: 3}
-  oldName: ungly flat
+  bioIncrease: 0
+  peopleIncrease: 0
+  energieIncrease: 1
+  oldName:
+  - ungly flat
   extraChanges:
   - {fileID: 4514301717537669623, guid: d30d003dfca50e84abad77d6948ecbe2, type: 3}
   - {fileID: 8436362959313433930, guid: f67d7d9bd32bb7c41ba9cd79c0f53318, type: 3}
+  - {fileID: 1569979086193477412, guid: f79f51cb379f2b741aab012e8d72de33, type: 3}
 --- !u!1 &3266280592294527902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,6 +1587,81 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &4969609918206277676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258862913790924895}
+  - component: {fileID: 408541760137352721}
+  - component: {fileID: 3045956695857554765}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1258862913790924895
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4969609918206277676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6910004457360669610}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -18.43869, y: -396.0926}
+  m_SizeDelta: {x: 1830.6472, y: 892.185}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &408541760137352721
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4969609918206277676}
+  m_CullTransparentMesh: 1
+--- !u!114 &3045956695857554765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4969609918206277676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5112996152735219766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,14 +1808,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0846a55f724bd6e4d88f5e5fb7ebf9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonChangeScore
-  changeA: 0
-  changeB: 2
-  changeC: 5
   explanation: {fileID: 3719944958709417037, guid: 011febd07f39d8849a032aa0b22028da, type: 3}
-  oldName: ungly flat
+  bioIncrease: 0
+  peopleIncrease: 1
+  energieIncrease: 2
+  oldName:
+  - ungly flat
   extraChanges:
   - {fileID: 4514301717537669623, guid: d30d003dfca50e84abad77d6948ecbe2, type: 3}
   - {fileID: 8436362959313433930, guid: f67d7d9bd32bb7c41ba9cd79c0f53318, type: 3}
+  - {fileID: 1569979086193477412, guid: f79f51cb379f2b741aab012e8d72de33, type: 3}
 --- !u!1 &5720995829713563282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,6 +1828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6910004457360669610}
   - component: {fileID: 1342086172042659195}
+  - component: {fileID: 9025684959842168251}
   - component: {fileID: 3720544024904007329}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -1766,7 +1848,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1258862913790924895}
   m_Father: {fileID: 5604822139528294449}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1782,6 +1865,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5720995829713563282}
   m_CullTransparentMesh: 1
+--- !u!114 &9025684959842168251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5720995829713563282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed69b4369b61f54a8fa52440f19a322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialoogSysteem
+  dialogueText: {fileID: 3720544024904007329}
+  typingSpeed: 0.02
+  sentences:
+  - Hey maat, hoe gaat ie? Ik heb een vraagje. Ik heb aan mijn baas gevraagd of we
+    constructie groener kunnen maken.
+  - "Hij vroeg of ik idee\xEBn had, maar ik kon niets bedenken. Heb jij misschien
+    wat tips?"
 --- !u!114 &3720544024904007329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1802,9 +1904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hey maat, hoe gaat ie? Ik heb een vraagje. Ik heb aan mijn baas gevraagd
-    of we constructie groener kunnen maken. Hij vroeg of ik idee\xEBn had, maar ik
-    kon niets bedenken. Heb jij misschien wat tips?"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9278096e51047c4a9138aeedc1558cc, type: 2}
   m_sharedMaterial: {fileID: 1785202904470462342, guid: c9278096e51047c4a9138aeedc1558cc, type: 2}

@@ -1,29 +1,43 @@
 using System.Collections.Generic;
 using UnityEngine;
+using static ScoresManager;
 
 public class ButtonChangeScore : MonoBehaviour
 {
-    public int changeA;
-    public int changeB;
-    public int changeC;
-
     public GameObject explanation;
 
-    public string oldName;
+    public int bioIncrease;
+    public int peopleIncrease;
+    public int energieIncrease;
+
+    public string[] oldName;
     public GameObject[] extraChanges;
     private ClickOnBuildings ClickOnBuildings;
 
+    private GameObject obj;
+
     public void ApplyEffect()
     {
-        ScoresManager.Instance.ChangeScores(changeA, changeB, changeC);
         EventManager.Instance.EventDeactivated();
 
-        GameObject obj = GameObject.Find(oldName);
+        foreach (var name in oldName)
+        {
+            obj = GameObject.Find(name);
+
+            if (obj != null)
+            {
+                Destroy(obj);
+            }
+        }
 
         if (obj != null)
         {
             Destroy(obj);
         }
+
+        ScoresManager.Instance.AddToElement(ElementType.Biodiversity, bioIncrease);
+        ScoresManager.Instance.AddToElement(ElementType.People, peopleIncrease);
+        ScoresManager.Instance.AddToElement(ElementType.Energie, energieIncrease);
 
         foreach (var change in extraChanges)
         {

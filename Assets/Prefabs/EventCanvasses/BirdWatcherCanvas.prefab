@@ -446,11 +446,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0846a55f724bd6e4d88f5e5fb7ebf9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonChangeScore
-  changeA: 5
-  changeB: 2
-  changeC: 0
   explanation: {fileID: 3719944958709417037, guid: cd692583a22d3b74088ef3d58bc67c9d, type: 3}
-  oldName: 
+  bioIncrease: 1
+  peopleIncrease: 1
+  energieIncrease: 0
+  oldName: []
   extraChanges:
   - {fileID: 5299296228053068868, guid: 9a2e14d36e9766745bdd22e114a312f0, type: 3}
   - {fileID: 5001211608217704139, guid: 0753f777b37ff7e48ab92b6755047d6f, type: 3}
@@ -1065,10 +1065,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6910004457360669610}
   - {fileID: 1690650389680886836}
   - {fileID: 3146888518969309321}
   - {fileID: 7384001417029717713}
+  - {fileID: 6910004457360669610}
   m_Father: {fileID: 2414018614043874241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1260,14 +1260,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0846a55f724bd6e4d88f5e5fb7ebf9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonChangeScore
-  changeA: 7
-  changeB: 0
-  changeC: 0
   explanation: {fileID: 3719944958709417037, guid: 27ac9af1a28d36a44a3c3caf613c18c5, type: 3}
-  oldName: 
+  bioIncrease: 2
+  peopleIncrease: 0
+  energieIncrease: 0
+  oldName: []
   extraChanges:
   - {fileID: 522982869817555147, guid: a5d4ef19bc827034cbf5930c664d608b, type: 3}
   - {fileID: 5001211608217704139, guid: 0753f777b37ff7e48ab92b6755047d6f, type: 3}
+--- !u!1 &3176615550098366261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9170674918983624086}
+  - component: {fileID: 2366411828958834141}
+  - component: {fileID: 1189067392698096429}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &9170674918983624086
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3176615550098366261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6910004457360669610}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -12.021, y: -400.66556}
+  m_SizeDelta: {x: 1760, y: 901.3309}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2366411828958834141
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3176615550098366261}
+  m_CullTransparentMesh: 1
+--- !u!114 &1189067392698096429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3176615550098366261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &3266280592294527902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,11 +1729,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0846a55f724bd6e4d88f5e5fb7ebf9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonChangeScore
-  changeA: 6
-  changeB: 0
-  changeC: 0
   explanation: {fileID: 3719944958709417037, guid: d4a5985402315a04fbb4231bbfe15648, type: 3}
-  oldName: 
+  bioIncrease: 2
+  peopleIncrease: 0
+  energieIncrease: 0
+  oldName: []
   extraChanges:
   - {fileID: 5001211608217704139, guid: 0753f777b37ff7e48ab92b6755047d6f, type: 3}
 --- !u!1 &5720995829713563282
@@ -1671,6 +1746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6910004457360669610}
   - component: {fileID: 1342086172042659195}
+  - component: {fileID: 7805694144439343102}
   - component: {fileID: 3720544024904007329}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -1690,7 +1766,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9170674918983624086}
   m_Father: {fileID: 5604822139528294449}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1706,6 +1783,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5720995829713563282}
   m_CullTransparentMesh: 1
+--- !u!114 &7805694144439343102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5720995829713563282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed69b4369b61f54a8fa52440f19a322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialoogSysteem
+  dialogueText: {fileID: 3720544024904007329}
+  typingSpeed: 0.05
+  sentences:
+  - Hallo daar! Jij bent de leider van onze gemeenschap, toch? Ik hoorde dat ik bij
+    jou moest zijn voor dingen die met het welzijn van de stad te maken hadden, dus
+    ik dacht ik bel je even.
+  - Ik heb namelijk gemerkt dat er over de afgelopen paar jaar steeds minder vogels
+    te zien zijn in de stad. Ik hou er namelijk van om vogels te kijken, snap je,
+    maar er zijn de laatste tijd zo weinig vogels dat ik mij erg verveel.
+  - Ik snap niet waarom alle vogels weg zijn, maar als het mogelijk is om ze terug
+    te laten komen, wil ik graag helpen!
 --- !u!114 &3720544024904007329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1726,11 +1826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hallo daar! Ik hoorde dat ik bij jou moest zijn voor dingen die met het
-    welzijn van de stad te maken hadden, dus ik dacht ik bel je even. Ik hou er van
-    om vogels te kijken, snap je, maar er zijn de laatste tijd zo weinig vogels.
-    Ik snap niet waarom alle vogels weg zijn, maar als het mogelijk is om ze terug
-    te laten komen, wil ik graag helpen!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9278096e51047c4a9138aeedc1558cc, type: 2}
   m_sharedMaterial: {fileID: 1785202904470462342, guid: c9278096e51047c4a9138aeedc1558cc, type: 2}
@@ -1796,7 +1892,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: -38.5007}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

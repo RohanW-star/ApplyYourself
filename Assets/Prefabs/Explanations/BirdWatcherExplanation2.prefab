@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3068111299755461863}
   - component: {fileID: 7732968018790731145}
+  - component: {fileID: 825824359143494239}
   - component: {fileID: 2419547631191505761}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -29,7 +30,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2991510453158576806}
   m_Father: {fileID: 1690650389680886836}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -45,6 +47,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913047837583789756}
   m_CullTransparentMesh: 1
+--- !u!114 &825824359143494239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913047837583789756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed69b4369b61f54a8fa52440f19a322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialoogSysteem
+  dialogueText: {fileID: 2419547631191505761}
+  typingSpeed: 0.05
+  sentences:
+  - Ik raad aan om meer vogelhuisjes te plaatsen, u kunt dit in uw tuin doen, of
+    we kunnen naar de gemeente toestappen om dit voor de hele buurt te doen. Vogelhuisjes
+    dienen als veilige plekken voor vogels om hun nesten te bouwen. Hierdoor hebben
+    de jongen ook meer kans om te overleven totdat ze zelf het nest uit kunnen.
 --- !u!114 &2419547631191505761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,10 +86,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ik raad aan om een klein vijvertje aan te leggen, u kunt dit in uw tuin
-    doen, of naar uw gemeente toestappen om dit voor de hele buurt te doen. Vijvertjes
-    kunnen niet alleen vogeltjes helpen om de dorst te lessen, maar ook insecten
-    en andere dieren. Vooral insecten zijn belangrijk omdat veel vogels die ook eten.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -288,11 +306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0846a55f724bd6e4d88f5e5fb7ebf9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonChangeScore
-  changeA: 5
-  changeB: 2
-  changeC: 0
   explanation: {fileID: 3719944958709417037}
-  oldName: 
+  oldName: []
   extraChanges: []
 --- !u!1 &2134388772961987479
 GameObject:
@@ -774,3 +789,105 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &7476840826699765725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3068111299755461863}
+    m_Modifications:
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 628.8488
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 473.2954
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00007264961
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000014305
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501999325017968497, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+      propertyPath: m_Name
+      value: RayCastBlocker
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+--- !u!224 &2991510453158576806 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5638763977915848059, guid: 7add75c8dd1801c4cb376a1c488d1a06, type: 3}
+  m_PrefabInstance: {fileID: 7476840826699765725}
+  m_PrefabAsset: {fileID: 0}
