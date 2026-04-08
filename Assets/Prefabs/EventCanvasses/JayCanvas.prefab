@@ -669,6 +669,7 @@ MonoBehaviour:
   - Autos
   extraChanges:
   - {fileID: 6950450248903602288, guid: f282536dbdc5f434c82bed54330be9a0, type: 3}
+  targetObject: {fileID: 0}
 --- !u!1 &1772152874742263047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1285,6 @@ RectTransform:
   - {fileID: 1690650389680886836}
   - {fileID: 3146888518969309321}
   - {fileID: 7384001417029717713}
-  - {fileID: 3470683953249501077}
   - {fileID: 6910004457360669610}
   - {fileID: 6510718032010930304}
   m_Father: {fileID: 2414018614043874241}
@@ -1485,81 +1485,7 @@ MonoBehaviour:
   oldName: []
   extraChanges:
   - {fileID: 4732009686338464812, guid: 146ebf0a777cdd34d935680fdfdaa355, type: 3}
---- !u!1 &2798939543887956587
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7843201142496501886}
-  - component: {fileID: 5232044169691369497}
-  - component: {fileID: 1028446606450390491}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7843201142496501886
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2798939543887956587}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6910004457360669610}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.4577, y: -396.77554}
-  m_SizeDelta: {x: 1819.0461, y: 893.5508}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5232044169691369497
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2798939543887956587}
-  m_CullTransparentMesh: 1
---- !u!114 &1028446606450390491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2798939543887956587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  targetObject: {fileID: 0}
 --- !u!1 &3194925179866044985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2019,7 @@ MonoBehaviour:
   - Autos
   - Autos2
   extraChanges: []
+  targetObject: {fileID: 0}
 --- !u!1 &5720995829713563282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,7 +2051,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7843201142496501886}
+  - {fileID: 3470683953249501077}
   m_Father: {fileID: 5604822139528294449}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2161,6 +2088,10 @@ MonoBehaviour:
     om mijn werk te gaan. Ik vind het vervelend dat ik elke dag met de auto moet
     omdat ik weet dat het slecht voor het milieu is.
   - Heb jij misschien een idee wat ik hier aan kan doen?
+  opties:
+  - {fileID: 1658376649389880790}
+  - {fileID: 5112996152735219766}
+  - {fileID: 2626134663144009077}
 --- !u!114 &3720544024904007329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2312,7 +2243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2340,7 +2271,6 @@ GameObject:
   - component: {fileID: 8316848827995326402}
   - component: {fileID: 2973775472191668899}
   - component: {fileID: 7858085373647911543}
-  - component: {fileID: 6952372620614568102}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -2357,15 +2287,15 @@ RectTransform:
   m_GameObject: {fileID: 7285393510797902396}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7699957, y: 2.0110545, z: 3.7699957}
+  m_LocalScale: {x: 3.7699955, y: 2.0110545, z: 3.7699955}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3695408933529334575}
-  m_Father: {fileID: 5604822139528294449}
+  m_Father: {fileID: 6910004457360669610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 551, y: -368.00012}
+  m_AnchoredPosition: {x: 491.86288, y: -461.00012}
   m_SizeDelta: {x: 131.8971, y: 96.9114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8316848827995326402
@@ -2450,7 +2380,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6952372620614568102}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonChangeScore, Assembly-CSharp
         m_MethodName: ApplyEffect
         m_Mode: 1
@@ -2462,28 +2392,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6952372620614568102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7285393510797902396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0846a55f724bd6e4d88f5e5fb7ebf9d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonChangeScore
-  explanation: {fileID: 3719944958709417037, guid: 21343fa1b4b4cd246aee5a4e330bda24, type: 3}
-  bioIncrease: 0
-  peopleIncrease: 2
-  energieIncrease: 0
-  oldName:
-  - Trash
-  - Sloot
-  extraChanges:
-  - {fileID: 2076255137136737408, guid: a8a2de3cb1bf3b14db6d570929cdb95e, type: 3}
-  - {fileID: 81346302588630466, guid: 8533c8501a4eba843a1aa62188e88658, type: 3}
 --- !u!1 &7465526260442139550
 GameObject:
   m_ObjectHideFlags: 0

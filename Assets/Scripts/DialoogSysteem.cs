@@ -7,6 +7,7 @@ public class DialoogSysteem : MonoBehaviour
     public float typingSpeed = 0.05f;
 
     public string[] sentences;
+    public GameObject[] opties;
 
     private int index = 0;
     private bool isTyping = false;
@@ -62,7 +63,14 @@ public class DialoogSysteem : MonoBehaviour
         }
         else
         {
-            Destroy(transform.GetChild(0).gameObject);
+            foreach (var optie in opties)
+            {
+                optie.SetActive(true);
+            }
+            foreach (Transform child in transform)
+            {
+                Destroy(child.gameObject);
+            }
         }
     }
 }

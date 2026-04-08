@@ -20,6 +20,7 @@ public class ClickOnBuildings : MonoBehaviour
                 {
                     Debug.Log("Start event");
                     buildingEvents = hit.transform.GetComponent<BuildingEvents>();
+                    ScoresManager.Instance.canEnd = false;
                     buildingEvents.SpawnCanvas();
                 }
             }
