@@ -2219,8 +2219,8 @@ MonoBehaviour:
   sentences:
   - Hey maat, hoe gaat ie? Ik heb een vraagje. Ik heb aan mijn baas gevraagd of we
     constructie groener kunnen maken.
-  - "Hij vroeg of ik idee\xEBn had, maar ik kon niets bedenken. Heb jij misschien
-    wat tips?"
+  - Hij vroeg of ik suggesties had, maar ik kon niets bedenken. Heb jij misschien
+    wat tips?
   opties:
   - {fileID: 1658376649389880790}
   - {fileID: 5112996152735219766}
